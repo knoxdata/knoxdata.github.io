@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+  {% include head.html %}
+  {% if page.custom_js %}
+    {% for script in page.custom_js%}
+    <script src="/assets/js/{{script}}.js"></script>
+    {% endfor %}
+  {% endif %}
+
+  <body{% if page.body_class %} class="{{ page.body_class }}{% endif %}">
+
+    <main class="wrapper">
+      {% include header.html %}
+      {{ content }}
+      {% include footer.html %}
+    </main>
+
+    {% include scripts.html %}
+    <script>
+    window.addEventListener("resize", myFunction);
+    myFunction();
+    function myFunction() {
+      // Query the element to set the background image property
+      var element = document.getElementsByTagName('header')[1];
+      var dimensions = element.getClientRects()[0];
+      // Create the Trianglify pattern
+      var pattern = Trianglify({
+          cell_size: 60,
+          variance: 0.91,
+          x_colors: 'BuPu',
+          y_colors: 'match_x',
+          palette: Trianglify.colorbrewer,
+          stroke_width: 1.51,
+          width: dimensions.width,
+          height: dimensions.height
+      });
+
+      // Serialize the SVG object to a String
+      var m = new XMLSerializer().serializeToString(pattern.svg());
+
+      // Perform the base64 encoding of the String
+      var k = window.btoa(m);
+
+      // Set the background image property, including the encoding type header
+      element.style.backgroundImage = 'url("data:image/svg+xml;base64,' + k + '")';
+    }
+    </script>
+  </body>
+</html><!-- by nandomoreira.me -->

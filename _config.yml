@@ -1,0 +1,46 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely need to edit after that.
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'jekyll serve'. If you change this file, please restart the server process.
+
+sass:
+  sass_dir: _sass
+  style: expanded # compressed # expanded
+
+# permalink and highlighter
+permalink   : /:year/:title/
+markdown    : kramdown
+highlighter : rouge
+
+# SEO settings
+title: KnoxData Science
+description: "Data Science Meetup in Knoxville, TN"
+keywords: "Data science, Tennessee, Knoxville, Machine Learning, python, rstats"
+
+# Site settings
+url: http://knoxdata.org
+baseurl: ""
+# baseurl: ""
+
+# Author settings
+author:
+  name      : Alex Pawlowski
+  job       : Co-organizer
+  bio       : "Co-organizer of KnoxData Science, PhD student at UT, researching at ORNL"
+  thumb     : /images/author.jpg
+  email     : organizer@knox3dp.org
+  url       : http://knox3dp.org
+  twitter   : https://twitter.com/knoxdatasci
+  meetup    : http://www.meetup.com/DSci-KNX/
+
+google_analytics: UA-44543225-4
+repo: http://github.com/knoxdata/knoxdata.github.io
+
+# comments
+disqus_shortname: "knoxdata"
+
+gems:
+  - github-pages
+  - jekyll-sitemap
