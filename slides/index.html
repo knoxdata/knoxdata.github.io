@@ -1,0 +1,32 @@
+---
+layout: default
+title: Slides from KnoxData Meetups
+excerpt: "A List of Slides"
+comments: false
+---
+
+<section class="slide-list">
+
+  <header class="slide-header intro">
+    <div class="intro-in">
+      <h1 class="slide-title">{{ page.title }}</h1>
+      {% if page.subtitle %}
+        <h2 class="intro-subtitle">{{ page.subtitle }}</h2>
+      {% endif %}
+    </div>
+  </header>
+
+  {% for slide in site.slides %}
+    <article class="slide-item container">
+      <header>
+        <span class="slide-meta">{{ slide.date | date: "%b %-d, %Y" }}</span>
+        <h1 class="slide-title">
+          <a class="slide-link" href="{{ slide.url | prepend: site.baseurl }}">{{ slide.title }}</a>
+        </h1>
+      </header>
+
+      <p>{{ slide.content | strip_html | truncatewords: 56 }} <a href="{{ slide.url | prepend: site.baseurl }}" title="Permalink to: {{ slide.title }}" class="read-more">Read more</a></p>
+    </article>
+  {% endfor %}
+
+</section>

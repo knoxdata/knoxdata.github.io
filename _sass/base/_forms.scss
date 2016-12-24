@@ -25,6 +25,8 @@ label {
     display: none;
   }
 }
+::-moz-selection{background:$base-background-color;}
+::selection{background: $base-background-color;}
 
 #{$all-text-inputs},
 select[multiple=multiple] {
@@ -85,6 +87,12 @@ input[type="file"] {
 
 select {
   margin-bottom: $base-spacing;
+  padding: 0.5em, 0.5em;
   max-width: 100%;
   width: auto;
+  border: $base-border;
+  border-radius: $base-border-radius;
+  box-shadow: $form-box-shadow;
+  padding: $base-spacing / 3;
+  transition: border-color $base-duration $base-timing;
 }
