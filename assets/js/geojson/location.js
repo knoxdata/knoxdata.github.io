@@ -1,7 +1,7 @@
 var techCoOp = {
     "type": "Feature",
     "properties": {
-        "popupContent": "Technology Cooperative <a href='http://w3w.co/loops.desks.focal'>loops.desks.focal</a>"
+        "popupContent": "Technology Cooperative \n <a href='http://w3w.co/loops.desks.focal'>loops.desks.focal</a>"
     },
     "geometry": {
         "type": "Point",

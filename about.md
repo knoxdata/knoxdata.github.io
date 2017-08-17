@@ -9,7 +9,7 @@ custom_js:
     - about_map
 ---
 
-__KnoxData Science__ is for anyone interested in the multidisciplinary field of data science. The group is open to novices and experts from the business and academic worlds that have an interest in anything data science-y: 
+__KnoxData__ is for anyone interested in the multidisciplinary field of data science. The group is open to novices and experts from the business and academic worlds that have an interest in anything data science-y: 
 
 - uses
 - analysis 

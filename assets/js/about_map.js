@@ -16,8 +16,7 @@ L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/256/{z}/{x}/{y}?access_
     accessToken: 'pk.eyJ1IjoiYWxleHBhd2xvd3NraSIsImEiOiJjaXR3dnV4ZjEwMGJoMm9vOGI5bTM0Zm9tIn0.7uVinZIV7codZNT18VD-4w'
 }).addTo(mymap);
 
-var geojsonMarkerOptions = {
-    radius: 8,
+var geojsonMarkerOptions = {radius: 8,
     fillColor: "#ff7800",
     color: "#000",
     weight: 1,
@@ -25,9 +24,7 @@ var geojsonMarkerOptions = {
     fillOpacity: 0.8
 };
 
-L.geoJSON(techCoOp, {
+L.geoJSON(techCoOp, {onEachFeature,
     pointToLayer: function (feature, latlng) {
         return L.circleMarker(latlng, geojsonMarkerOptions);
-    },
-    onEachFeature: onEachFeature
-}).addTo(mymap);
+    }}).addTo(mymap);

@@ -5,7 +5,7 @@ subtitle: Check out our past and future meetups!
 permalink: /meetups
 custom_js:
  - format-google-calendar.min
- - jquery-2.1.1
+ - jquery-3.1.1
 ---
 
 <ul id="events-upcoming">
