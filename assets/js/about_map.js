@@ -17,14 +17,16 @@ L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/256/{z}/{x}/{y}?access_
 }).addTo(mymap);
 
 var geojsonMarkerOptions = {radius: 8,
-    fillColor: "#ff7800",
-    color: "#000",
+    fillColor: "#673AB7",
+    color: "#673AB7",
     weight: 1,
     opacity: 1,
     fillOpacity: 0.8
 };
-
-L.geoJSON(techCoOp, {onEachFeature,
+var geojsonLayer = new L.GeoJSON.AJAX('assets/js/geojson/location.json', {
     pointToLayer: function (feature, latlng) {
         return L.circleMarker(latlng, geojsonMarkerOptions);
-    }}).addTo(mymap);
+    },
+    onEachFeature: onEachFeature
+}).addTo(mymap);
+

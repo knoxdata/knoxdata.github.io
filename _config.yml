@@ -41,6 +41,6 @@ repo: http://github.com/knoxdata/knoxdata.github.io
 # comments
 disqus_shortname: "knoxdata"
 
-gems:
+plugins:
   - github-pages
   - jekyll-sitemap

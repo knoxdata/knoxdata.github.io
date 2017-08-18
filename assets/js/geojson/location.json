@@ -1,0 +1,12 @@
+{
+    "type": "Feature",
+    "properties": {
+        "popupContent": "<h3><a href='http://techco.org'>Technology Cooperative</a></h3> <p> Hosts KnoxData events every Third Thursday </p> <p>13 Emory Pl</p>",
+        "name":"TechCoOp",
+        "w3w":"<a href='http://w3w.co/loops.desks.focal'>loops.desks.focal</a>"
+    },
+    "geometry": {
+        "type": "Point",
+        "coordinates": [-83.922888, 35.974675]
+    }
+}
