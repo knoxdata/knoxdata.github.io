@@ -1,4 +1,11 @@
 #mapid {
     width:600px;
     height:400px;
+    z-index:10;
+}
+@media screen and (max-width: 768px) {
+  #mapid  {
+    width:92vw;
+    height:300px;
+  }
 }
