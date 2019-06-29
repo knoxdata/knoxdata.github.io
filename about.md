@@ -20,11 +20,11 @@ __KnoxData__ is for anyone interested in the multidisciplinary field of data sci
 
 The aim is to maintain a forum for connecting people around data science specific topics such as tutorials and their applications, local success stories, discussions of new technologies, and best practices. All are welcome to attend, network, and present!
 
-Join us on [Meetup!](http://www.meetup.com/DSci-KNX) and [join](http://knoxdevs-slackin.herokuapp.com/) the `#data` channel on the [KnoxDevs](http://knoxdevs.org) Slack group!
+Join us on [Meetup!](https://www.meetup.com/knoxdata) and [join](http://knoxdevs-slackin.herokuapp.com/) the `#data` channel on the [KnoxDevs](https://knoxdevs.org) Slack group!
 
 ## Location
 
-We host meetups at the [Technology Cooperative](http://techco.org/) usually the third Thursday of every month, in Emory Place, across the street from the Crafty Bastard Brewery. After meetups, we generally walk across the street to continue on the great conversations from the evening.
+We host meetups at the [Technology Cooperative](http://techco.org/) usually the third Thursday of every month, along Jackson Avenue in the Old City, next to Awaken Coffee. After meetups, we generally walk across the street to Curious Dogs or next door to Pour Taproom to continue the conversation :).
 
 <style>
 /*
